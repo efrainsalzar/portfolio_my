@@ -1,0 +1,39 @@
+/* index.css - Estilos globales */
+
+/* Restablecer márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Estilo para el body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos comunes para encabezados */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Eliminar los puntos de las listas */
+ul {
+  list-style-type: none;
+}
+
+/* Estilos generales para los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+}

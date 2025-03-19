@@ -1,0 +1,82 @@
+/* Estilos para el Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header .logo:hover {
+    color: #f4a261;  /* Color de hover para el logo */
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #f4a261;  /* Color de fondo al hacer hover */
+    color: #333;  /* Color del texto al hacer hover */
+  }
+  
+  /* Agregar un efecto sticky cuando se hace scroll */
+  header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Media Queries para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    header nav ul li a {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .logo {
+      font-size: 1.8rem;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* src/components/About.css */
+.about-section {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    text-align: center; /* Centramos el texto para un diseño limpio */
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; /* Alineamos las listas a la izquierda */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-text li {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .about-text li strong {
+    color: #333;
+  }
+  
+  /* Media Queries para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  
+    .about-text h3 {
+      font-size: 1.7rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  
