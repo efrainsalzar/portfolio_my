@@ -5,30 +5,20 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Desarrollo de Videojuego en SDL con C++",
+      title: "Games Development in SDL with C++",
       description: "Desarrollé un videojuego interactivo utilizando la biblioteca SDL en C++, centrándome en la física del juego y la lógica de eventos en tiempo real.",
       image: "https://via.placeholder.com/300x200?text=Videojuego+SDL",
     },
     {
-      title: "Inteligencia Artificial para Predicción de Datos",
+      title: "Artificial Intelligence for Data Prediction",
       description: "Implementé un modelo de IA para predecir tendencias de mercado usando aprendizaje supervisado y técnicas de análisis de datos.",
       image: "https://via.placeholder.com/300x200?text=IA+Predicción",
     },
     {
-      title: "Análisis de Datos con Python",
-      description: "Realicé análisis de grandes volúmenes de datos utilizando Python, con bibliotecas como Pandas y Matplotlib, para generar insights valiosos para la toma de decisiones.",
+      title: "Mobile App Development with Kotlin",
+      description: "Desarrollé una aplicación móvil para Android utilizando Kotlin, con un enfoque en la interfaz de usuario y la interacción con servicios web. conectada a base de datos Fire Base",
       image: "https://via.placeholder.com/300x200?text=Análisis+de+Datos",
-    },
-    {
-      title: "Desarrollo Web Full-Stack",
-      description: "Desarrollé una aplicación web full-stack usando React.js y Node.js, implementando una API RESTful y una interfaz de usuario interactiva.",
-      image: "https://via.placeholder.com/300x200?text=Desarrollo+Web",
-    },
-    {
-      title: "Redes Cisco - Configuración de Routers",
-      description: "Configuré routers y switches Cisco para la creación de redes locales, aplicando técnicas de enrutamiento y seguridad.",
-      image: "https://via.placeholder.com/300x200?text=Redes+Cisco",
-    },
+    }
   ];
 
   return (

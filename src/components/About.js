@@ -9,21 +9,25 @@ function About() {
         <div className="about-text">
           <h2>Sobre mí</h2>
           <p>
-            Soy [Tu Nombre], un desarrollador web apasionado por crear aplicaciones interactivas y
-            fáciles de usar. Con [X años] de experiencia trabajando en
-            proyectos de desarrollo frontend y backend.
+            Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo de software, 
+            la ciberseguridad y el análisis de datos. A lo largo de mi carrera, he adquirido 
+            experiencia en diversos lenguajes de programación como C++, Java, Python y Kotlin.
           </p>
-
-          <h3>Mis especialidades</h3>
+          
+          <p>Mi experiencia técnica abarca:</p>
           <ul>
-            <li>React.js, JavaScript, TypeScript</li>
-            <li>Node.js, Express</li>
-            <li>HTML5, CSS3, Flexbox, Grid</li>
-            <li>Bases de datos SQL/NoSQL (MongoDB, MySQL)</li>
-            <li>Desarrollo responsive y mobile-first</li>
-            <li>Gestión de proyectos con Git/GitHub</li>
-            <li>Diseño UX/UI y prototipado con Figma</li>
+            <li>Bases de datos (MySQL, PostgreSQL, MongoDB)</li>
+            <li>Microservicios y Docker</li>
+            <li>Redes Cisco</li>
+            <li>Inteligencia Artificial</li>
+            <li>Desarrollo web y de videojuegos</li>
+            <li>Hacking ético</li>
           </ul>
+          
+          <p>
+            Me enfoco en crear soluciones tecnológicas eficientes mientras continúo ampliando 
+            mis conocimientos en las áreas más innovadoras de la ingeniería de sistemas.
+          </p>
         </div>
       </div>
     </section>

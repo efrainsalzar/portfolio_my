@@ -1,51 +1,79 @@
 /* src/components/Home.css */
 .home-section {
-    background-color: #f4f4f4;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background: rgba(34, 34, 34, 0.6); /* Fondo oscuro con transparencia */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: blur(2px); /* Efecto difuminado */
+}
+
+.home-content {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0); /* Fondo con opacidad para un mejor contraste */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.7); /* Borde con transparencia */
+  margin-bottom: 20px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: #f0f0f0; /* Blanco suave */
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #ddd; /* Gris claro */
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #fa6705, #c05621); /* Naranja cálido y marrón */
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff7f0e, #ff4500); /* Hover con un naranja brillante */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 103, 5, 0.5);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .home-content {
     padding: 20px;
   }
   
-  .home-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #333;
-    margin-bottom: 30px;
-  }
-  
   .home-content h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
   }
-  
+
   .home-content p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
+    font-size: 1rem;
   }
-  
+
   .cta-button {
-    font-size: 1.1rem;
-    color: #fff;
-    background-color: #f4a261;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    font-size: 1rem;
+    padding: 10px 20px;
   }
-  
-  .cta-button:hover {
-    background-color: #e76f51;
-  }
-  
+}

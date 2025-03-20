@@ -1,79 +1,62 @@
 // src/components/Contact.js
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí se puede agregar la lógica para enviar el formulario, como un correo o una API.
-    console.log('Formulario enviado:', formData);
-    // Limpiar formulario
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/tu-perfil',
+      icon: 'fab fa-linkedin-in',
+      color: '#0077B5'
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/tu-usuario',
+      icon: 'fab fa-github',
+      color: '#333'
+    },
+    {
+      name: 'Email',
+      url: 'mailto:tu-correo@dominio.com',
+      icon: 'far fa-envelope',
+      color: '#D44638'
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/tu-usuario',
+      icon: 'fab fa-twitter',
+      color: '#1DA1F2'
+    },
+    {
+      name: 'Instagram',
+      url: 'https://instagram.com/tu-usuario',
+      icon: 'fab fa-instagram',
+      color: '#E4405F'
+    }
+  ];
 
   return (
     <section id="contact" className="contact-section">
-      <h2>Contacto</h2>
-      <form onSubmit={handleSubmit} className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+      <div className="contact-container">
+        <h2>Contacto</h2>
+        <p className="contact-text">¿Quieres ponerte en contacto conmigo? Encuéntrame en las siguientes redes:</p>
+        
+        <div className="social-links-container">
+          {socialLinks.map((link, index) => (
+            <a 
+              key={index} 
+              href={link.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="social-button"
+              style={{'--hover-color': link.color}}
+            >
+              <i className={link.icon}></i>
+              <span>{link.name}</span>
+            </a>
+          ))}
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Correo Electrónico</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Mensaje</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
-        <button type="submit" className="submit-btn">Enviar</button>
-      </form>
-
-      <div className="contact-info">
-        <h3>También puedes contactarme a través de:</h3>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="mailto:tu-correo@dominio.com">Correo Electrónico</a></li>
-        </ul>
       </div>
     </section>
   );

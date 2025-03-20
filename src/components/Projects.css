@@ -1,69 +1,73 @@
 /* src/components/Projects.css */
 .projects-section {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
+  background: rgba(34, 34, 34, 0.6); /* Fondo oscuro con transparencia */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  color: #f0f0f0; /* Blanco suave */
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background: rgba(31, 30, 30, 0.6); /* Fondo oscuro y transparente */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el área de texto */
+  border-top: 1px solid #fa6705; /* Línea superior en color naranja */
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  color: #f0f0f0; /* Blanco suave */
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #ddd; /* Gris claro */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
   .projects-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 40px;
+    font-size: 2rem;
   }
-  
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 350px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .project-info {
-    padding: 20px;
-  }
-  
+
   .project-info h3 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
-  
+
   .project-info p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 768px) {
-    .projects-section h2 {
-      font-size: 2rem;
-    }
-  
-    .project-info h3 {
-      font-size: 1.5rem;
-    }
-  
-    .project-info p {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

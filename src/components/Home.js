@@ -10,9 +10,9 @@ function Home() {
         <img src={profilePic} alt="Foto profesional" className="profile-pic" />
         <h1>¡Hola, soy Efrain Salazar Santos!</h1>
         <p>
-          Desarrollador Web | Diseñador UI/UX | Apasionado por crear experiencias digitales increíbles.
+        "Estudiante Ingeniera de Sistemas | Desarrollador de Software
         </p>
-        <a href="#about" className="cta-button">Conoce más sobre mí</a>
+        <a href="#about" className="cta-button">Sobre mí</a>
       </div>
     </section>
   );

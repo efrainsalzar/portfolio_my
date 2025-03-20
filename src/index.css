@@ -12,13 +12,18 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-image: url('../src/assets/font.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ddd;
 }
 
 /* Estilos comunes para encabezados */
 h1, h2, h3 {
   font-weight: bold;
+  color: #fff;
 }
 
 /* Eliminar los puntos de las listas */
@@ -29,11 +34,18 @@ ul {
 /* Estilos generales para los enlaces */
 a {
   text-decoration: none;
-  color: inherit;
+  color: #bbb;
+}
+
+a:hover {
+  color: #fff;
 }
 
 section {
   padding: 50px 0;
   width: 80%;
   margin: auto;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
