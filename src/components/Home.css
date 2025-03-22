@@ -1,13 +1,15 @@
 /* src/components/Home.css */
 .home-section {
-  background: rgba(34, 34, 34, 0.6); /* Fondo oscuro con transparencia */
-  height: 100vh;
+  background: rgba(34, 34, 34, 0.7); /* Fondo oscuro con transparencia */
+  height: 95vh;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
   backdrop-filter: blur(2px); /* Efecto difuminado */
+  margin-top: 100px;
 }
 
 .home-content {

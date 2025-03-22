@@ -1,11 +1,13 @@
-/* src/components/Contact.css */
 .contact-section {
   padding: 80px 0;
   background: rgba(34, 34, 34, 0.8); /* Fondo oscuro */
-  min-height: 50vh;
+  min-height: 30vh;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .contact-container {
@@ -54,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   padding: 12px 24px;
   border-radius: 30px;
   background-color: #fff;
@@ -63,22 +65,55 @@
   font-weight: 500;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  min-width: 150px;
+  min-width: 160px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .social-button i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transición para el ícono */
+}
+
+.social-button span {
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Transición para el texto */
 }
 
 .social-button:hover {
-  background-color: #ff7f0e; /* Hover naranja brillante */
+  background-color: var(--hover-color); /* Color de fondo dinámico según la red social */
   color: #fff;
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.social-button:hover i {
+  color: #fff; /* El color del ícono también cambia al color de fondo */
+  transform: scale(1.2); /* Efecto de escala en el ícono */
+}
+
+/* Colores específicos para cada red social */
+.social-button.linkedin:hover {
+  --hover-color: #0077B5;
+}
+
+.social-button.github:hover {
+  --hover-color: #333;
+}
+
+.social-button.email:hover {
+  --hover-color: #D44638;
+}
+
+.social-button.twitter:hover {
+  --hover-color: #1DA1F2;
+}
+
+.social-button.instagram:hover {
+  --hover-color: #cf4d99;
+}
+
 .social-button:active {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* Responsive styles */

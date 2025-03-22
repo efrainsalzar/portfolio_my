@@ -1,4 +1,3 @@
-// src/components/About.js
 import React from 'react';
 import './About.css';
 
@@ -9,24 +8,23 @@ function About() {
         <div className="about-text">
           <h2>Sobre mí</h2>
           <p>
-            Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo de software, 
-            la ciberseguridad y el análisis de datos. A lo largo de mi carrera, he adquirido 
-            experiencia en diversos lenguajes de programación como C++, Java, Python y Kotlin.
+            Soy estudiante de Ingeniería de Sistemas con una gran pasión por el desarrollo de software, 
+            la ciberseguridad y el análisis de datos. Me encanta crear soluciones innovadoras utilizando 
+            tecnologías modernas y mejorar constantemente mis habilidades.
           </p>
-          
-          <p>Mi experiencia técnica abarca:</p>
+
+          <h3>Habilidades y Tecnologías</h3>
           <ul>
-            <li>Bases de datos (MySQL, PostgreSQL, MongoDB)</li>
-            <li>Microservicios y Docker</li>
-            <li>Redes Cisco</li>
-            <li>Inteligencia Artificial</li>
-            <li>Desarrollo web y de videojuegos</li>
-            <li>Hacking ético</li>
+            <li><strong>Bases de datos:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>Backend:</strong> Node.js, Express, Docker, Microservicios</li>
+            <li><strong>Redes y Seguridad:</strong> Configuración Cisco, Hacking ético</li>
+            <li><strong>Inteligencia Artificial:</strong> Análisis de datos y modelos de predicción</li>
+            <li><strong>Desarrollo:</strong> Web con React y desarrollo de videojuegos con C++ y SDL</li>
           </ul>
-          
+
           <p>
-            Me enfoco en crear soluciones tecnológicas eficientes mientras continúo ampliando 
-            mis conocimientos en las áreas más innovadoras de la ingeniería de sistemas.
+            Me esfuerzo en desarrollar software eficiente y seguro mientras sigo aprendiendo nuevas tecnologías.
+            Si deseas conocer más sobre mi trabajo, no dudes en contactarme.
           </p>
         </div>
       </div>

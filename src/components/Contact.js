@@ -1,39 +1,47 @@
-// src/components/Contact.js
 import React from 'react';
 import './Contact.css';
 
 function Contact() {
+  // Mapeo de colores para las redes sociales
+  const socialColors = {
+    linkedin: '#0077B5',
+    github: '#333',
+    email: '#D44638',
+    twitter: '#1DA1F2',
+    instagram: '#E4405F'
+  };
+
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/tu-perfil',
-      icon: 'fab fa-linkedin-in',
-      color: '#0077B5'
+      url: 'https://www.linkedin.com/in/efrain-salazar-santos-37ab23300/',
+      icon: 'fa-linkedin',
+      className: 'linkedin'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/tu-usuario',
-      icon: 'fab fa-github',
-      color: '#333'
+      url: 'https://github.com/efrainsalzar',
+      icon: 'fa-github',
+      className: 'github'
     },
-    {
+    /*{
       name: 'Email',
       url: 'mailto:tu-correo@dominio.com',
-      icon: 'far fa-envelope',
-      color: '#D44638'
-    },
+      icon: 'fa-envelope',
+      className: 'email'
+    },*/
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/tu-usuario',
-      icon: 'fab fa-twitter',
-      color: '#1DA1F2'
+      name: 'X',
+      url: 'https://x.com/Nirf13',
+      icon: 'fa-twitter',
+      className: 'twitter'
     },
-    {
+    /*
       name: 'Instagram',
       url: 'https://instagram.com/tu-usuario',
-      icon: 'fab fa-instagram',
-      color: '#E4405F'
-    }
+      icon: 'fa-instagram',
+      className: 'instagram'
+    }*/
   ];
 
   return (
@@ -49,10 +57,10 @@ function Contact() {
               href={link.url} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="social-button"
-              style={{'--hover-color': link.color}}
+              className={`social-button ${link.className}`} 
+              style={{ '--hover-color': socialColors[link.className] }}  // Aquí removimos el comentario
             >
-              <i className={link.icon}></i>
+              <i className={`fa ${link.icon}`}></i>
               <span>{link.name}</span>
             </a>
           ))}

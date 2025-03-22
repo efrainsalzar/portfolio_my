@@ -1,63 +1,94 @@
-/* src/components/Projects.css */
 .projects-section {
-  background: rgba(34, 34, 34, 0.6); /* Fondo oscuro con transparencia */
+  background: rgba(30, 30, 30, 0.7);
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   padding: 60px 20px;
   text-align: center;
+  max-width: 1500px;
+  position: relative;
+  overflow: hidden;
 }
 
 .projects-section h2 {
   font-size: 2.5rem;
-  color: #f0f0f0; /* Blanco suave */
+  color: #f0f0f0;
   margin-bottom: 40px;
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-scroll {
+  display: flex;
   gap: 20px;
-  justify-items: center;
+  padding: 10px;
 }
 
 .project-card {
-  background: rgba(31, 30, 30, 0.6); /* Fondo oscuro y transparente */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(31, 30, 30, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 100%;
-  max-width: 350px;
-  transition: transform 0.3s ease-in-out;
+  width: 320px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex-shrink: 0;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-info {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el área de texto */
-  border-top: 1px solid #fa6705; /* Línea superior en color naranja */
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 2px solid #fa6705;
+
 }
 
 .project-info h3 {
   font-size: 1.8rem;
-  color: #f0f0f0; /* Blanco suave */
+  color: #f0f0f0;
   margin-bottom: 10px;
+  white-space: normal;
 }
 
-.project-info p {
+.project-description {
   font-size: 1rem;
-  color: #ddd; /* Gris claro */
+  color: #ccc;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  display: block;
+  
 }
 
-/* Estilos responsivos */
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  background-color: #fa6705;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background-color: #ff7f27;
+}
+
 @media (max-width: 768px) {
   .projects-section h2 {
     font-size: 2rem;

@@ -1,29 +1,24 @@
 /* src/components/About.css */
 .about-section {
-  padding: 50px;
-  background: none;
-  min-height: 100vh;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
+  min-height: 100vh;
 }
 
 .about-content {
-  width: 100%;
-  background: rgba(34, 34, 34, 0.7); /* Fondo oscuro con transparencia */
+  background: rgba(34, 34, 34, 0.85); /* Fondo oscuro con transparencia */
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  padding: 40px 20px;
+  padding: 50px 30px;
+  text-align: left;
 }
-
-.about-text {
-  max-width: 800px;
-}
-
 .about-text h2 {
-  font-size: 2.2rem;
-  color: #f0f0f0; /* Blanco suave */
-
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
   text-align: center;
   position: relative;
 }
@@ -31,51 +26,71 @@
 .about-text h2::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: #fa6705; /* Naranja cálido */
+  background-color: #fa6705;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  color: #ddd; /* Gris claro */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #fa6705;
+  margin: 30px 0 15px;
+  text-align: center;
 }
 
 .about-text ul {
-  margin-bottom: 25px;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .about-text ul li {
   position: relative;
-  padding-left: 15px;
+  font-size: 1.1rem;
+  color: #ddd;
   margin-bottom: 10px;
-  font-size: 1.05rem;
-  color: #ddd; /* Gris claro */
+  padding-left: 30px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .about-text ul li::before {
-  content: '•';
+  content: '✔';
   position: absolute;
   left: 0;
-  color: #fa6705; /* Naranja cálido */
+  color: #fa6705;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-/* Estilos responsivos */
+
+/* Responsividad */
 @media (max-width: 768px) {
   .about-section {
-    padding: 40px 0;
+    padding: 40px 10px;
   }
-  
+
+  .about-content {
+    padding: 40px 20px;
+  }
+
   .about-text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  
+
+  .about-text h3 {
+    font-size: 1.6rem;
+  }
+
   .about-text p, .about-text ul li {
     font-size: 1rem;
   }
