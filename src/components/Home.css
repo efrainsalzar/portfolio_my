@@ -1,81 +1,155 @@
-/* src/components/Home.css */
 .home-section {
-  background: rgba(34, 34, 34, 0.7); /* Fondo oscuro con transparencia */
-  height: 95vh;
-  max-width: 1500px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 20px;
-  backdrop-filter: blur(2px); /* Efecto difuminado */
-  margin-top: 100px;
+  align-items: center;
+  text-align: left;
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  padding: 50px 20px;
+  gap: 40px; /* Espacio entre texto e imagen */
 }
 
 .home-content {
-  padding: 20px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0); /* Fondo con opacidad para un mejor contraste */
+  max-width: 600px;
+  flex: 1;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(255, 255, 255, 0.7); /* Borde con transparencia */
+}
+
+h1 {
+  font-size: 36px;
+  color: #bfd5ff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #7c7c7c;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.home-content h1 {
-  font-size: 3rem;
-  color: #f0f0f0; /* Blanco suave */
-
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+/* Contenedor de los enlaces de redes */
+.social-buttons {
+  display: flex;
+  justify-content: start;
+  gap: 15px; /* Espacio entre enlaces */
+  margin-top: 20px;
 }
 
-.home-content p {
-  font-size: 1.2rem;
-  color: #ddd; /* Gris claro */
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-/* Botón de llamada a la acción */
-.cta-button {
-  font-size: 1.1rem;
+/* Estilos para los enlaces */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
   color: #fff;
-  background: linear-gradient(135deg, #fa6705, #c05621); /* Naranja cálido y marrón */
-  padding: 12px 25px;
-  border-radius: 30px;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  display: inline-block;
+  background: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.cta-button:hover {
-  background: linear-gradient(135deg, #ff7f0e, #ff4500); /* Hover con un naranja brillante */
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(255, 103, 5, 0.5);
+/* Ajuste del tamaño del icono */
+.social-link i {
+  font-size: 20px;
 }
 
-/* Estilos responsivos */
+/* Efecto hover */
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.4); /* Hace el fondo más visible */
+  transform: scale(1.08);
+}
+
+/* Colores específicos de redes */
+.linkedin {
+  color: #ffffff;
+}
+
+.github {
+  color: #ffffff;
+}
+
+.email {
+  color: #ffffff;
+}
+
+
+
+/* Botón "Sobre mí" en la parte inferior */
+.about-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background:none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #064b0f;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .home-content {
-    padding: 20px;
-  }
-  
-  .home-content h1 {
-    font-size: 2.5rem;
+  .home-section {
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
-  .home-content p {
-    font-size: 1rem;
+  .profile-pic {
+    width: 180px;
   }
 
-  .cta-button {
-    font-size: 1rem;
-    padding: 10px 20px;
+  .social-buttons {
+    justify-content: center;
   }
+
+  .social-button {
+    font-size: 16px;
+  }
+}
+
+/* Estilo para el enlace de deslizar */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(150, 154, 167);
+  font-size: 24px;
+  animation: bounce 1.5s infinite ease-in-out;
+  text-decoration: none;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Cambio de color en hover */
+.scroll-down:hover {
+  color: #0077b5;
 }

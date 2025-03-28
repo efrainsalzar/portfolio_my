@@ -1,109 +1,75 @@
-/* Header.css */
 header {
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 38, 255, 0.212);
+  padding: 20px 0;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  width: 100%;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
-  height: 70px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
+  padding: 0 20px;
 }
 
 .logo img {
-  height: 50px;
-  width: auto;
-  border-radius: 50%; /* Si tu imagen es cuadrada y quieres hacerla circular */
+  width: 50px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
-nav ul {
-  display: flex;
+.nav-links {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav ul li {
-  margin-left: 30px;
+.nav-links li {
+  display: inline-block;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
-}
-
-nav ul li a {
-  color: #bbb;
-  font-weight: 500;
+.nav-links a {
+  color: white;
   text-decoration: none;
-  padding: 5px 0;
-  position: relative;
-  transition: color 0.3s ease;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
 }
 
-nav ul li a:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #bbb;
-  bottom: 0;
-  left: 0;
-  transition: width 0.3s ease;
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
-nav ul li a:hover {
-  color: #fff;
+.social-links-container {
+  display: flex;
+  gap: 50px;  /* Aumentado el espacio entre los iconos */
 }
 
-nav ul li a:hover:after {
-  width: 100%;
+.social-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;  /* Tamaño inicial de los iconos */
+  transition: color 0.3s ease, transform 0.3s ease;  /* Transición para el color y el tamaño */
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .header-container {
-    padding: 0 20px;
-  }
-  
-  nav ul li {
-    margin-left: 15px;
-  }
+.social-logo:hover {
+  color: #fff;  /* Cambia el color del icono al pasar el ratón */
+  transform: scale(1.2);  /* Aumenta el tamaño del icono un 20% */
 }
 
-@media (max-width: 576px) {
-  .header-container {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-  }
-  
-  .logo {
-    margin-bottom: 15px;
-  }
-  
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 5px 10px;
-  }
+.github {
+  color: #333;
+}
+
+.linkedin {
+  color: #0077b5;
 }

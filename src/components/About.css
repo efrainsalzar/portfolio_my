@@ -1,97 +1,81 @@
-/* src/components/About.css */
+/* Sección sobre mí */
 .about-section {
-  max-width: 1500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: none;
-  min-height: 100vh;
-}
-
-.about-content {
-  background: rgba(34, 34, 34, 0.85); /* Fondo oscuro con transparencia */
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  padding: 50px 30px;
+  justify-content: center;
+  align-items: center;
   text-align: left;
+  padding: 50px 20px;
 }
+
+/* Contenedor del contenido */
+.about-content {
+  max-width: 800px; /* Mismo ancho máximo que en el home */
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center;
+}
+
+/* Estilos del texto */
 .about-text h2 {
-  font-size: 2.5rem;
-  color: #f0f0f0;
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
+  font-size: 32px;
+  color: #9c9c9c;
+  margin-bottom: 15px;
 }
 
-.about-text h2::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: #fa6705;
+/* Contenedor de la imagen */
+.about-image {
+  display: flex;
+  justify-content: center; /* Centra la imagen */
+  margin: 20px 0; /* Espaciado arriba y abajo */
 }
 
+/* Imagen centrada */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Párrafos de texto */
 .about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 18px;
+  color: #e2e2e2;
+  line-height: 1.6;
   margin-bottom: 20px;
-  color: #f5f5f5;
-
+  max-width: 700px;
+  text-align: left; /* Alinea el texto al centro */
+}
+/*contenedor para la imagen*/
+.about-image-button {
+  display: flex;
+  justify-content: center; /* Centra la imagen */
+  margin: 20px 0; /* Espaciado arriba y abajo */
+}
+/* Contenedor para el botón de descarga */
+.cv-button-container {
+  display: flex;
+  justify-content: center; /* Centra el botón */
+  margin-top: 20px;
 }
 
-.about-text h3 {
-  font-size: 1.8rem;
-  color: #fa6705;
-  margin: 30px 0 15px;
-  text-align: center;
+/* Botón de descarga de CV */
+.cv-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
-.about-text ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.about-text ul li {
-  position: relative;
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-bottom: 10px;
-  padding-left: 30px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.about-text ul li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: #fa6705;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-
-/* Responsividad */
-@media (max-width: 768px) {
-  .about-section {
-    padding: 40px 10px;
-  }
-
-  .about-content {
-    padding: 40px 20px;
-  }
-
-  .about-text h2 {
-    font-size: 2rem;
-  }
-
-  .about-text h3 {
-    font-size: 1.6rem;
-  }
-
-  .about-text p, .about-text ul li {
-    font-size: 1rem;
-  }
+.cv-button:hover {
+  background-color: #005f8f;
 }

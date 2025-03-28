@@ -1,51 +1,16 @@
-/* index.css - Estilos globales */
-
-/* Restablecer márgenes y padding */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 /* Estilo para el body */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-image: url('../src/assets/font.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #ddd;
+  background: rgba(35, 52, 143, 0.9);
 }
-
-/* Estilos comunes para encabezados */
-h1, h2, h3 {
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Eliminar los puntos de las listas */
-ul {
-  list-style-type: none;
-}
-
 /* Estilos generales para los enlaces */
 a {
   text-decoration: none;
-  color: #bbb;
 }
 
-a:hover {
-  color: #fff;
-}
-
-section {
-  padding: 50px 0;
-  width: 80%;
-  margin: auto;
-  background-color: #2c2c2c;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
