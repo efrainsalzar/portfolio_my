@@ -46,36 +46,9 @@
   justify-content: center;
   gap: 25px; /* Espacio entre íconos */
 }
-
-/* Botones de las redes sociales */
-.social-logo {
-  font-size: 24px; /* Tamaño del ícono */
-  color: #e2e2e2;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Efecto hover */
-.social-logo:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
-}
-
-/* Estilos específicos para cada red social */
-.social-logo.github {
-  color: #b6b6b6; /* Color oscuro para GitHub */
-}
-
-.social-logo.linkedin {
-  color: #a0a0a0; /* Color de LinkedIn */
-}
-
-.social-logo.x {
-  color: #9c9c9c; /* Color para el ícono de Twitter (si es "X") */
-}
-
-/* Asegúrate de que los íconos tengan el tamaño adecuado */
-.social-logo i {
-  font-size: 30px;
+.social-icon {
+  width: 30px; /* Ajusta según el tamaño deseado */
+  display: block; /* Asegura que no estén ocultas */
 }
 
 /* Estilos específicos para pantallas más pequeñas */
@@ -95,9 +68,6 @@
     gap: 15px; /* Ajustamos el espacio entre los íconos */
   }
 
-  .social-logo i {
-    font-size: 26px; /* Ajustamos el tamaño de los íconos */
-  }
 }
 
 @media (max-width: 480px) {
@@ -112,9 +82,5 @@
 
   .social-links {
     gap: 10px; /* Reducimos el espacio entre los íconos */
-  }
-
-  .social-logo i {
-    font-size: 22px; /* Tamaño más pequeño para los íconos */
   }
 }

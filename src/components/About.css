@@ -67,17 +67,18 @@
 /* Botón de descarga de CV */
 .cv-button {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #0077b5;
+  padding: 10px 20px;
+  background-color: rgba(33, 95, 228, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 15px;
   transition: background-color 0.3s ease;
 }
 
 .cv-button:hover {
-  background-color: #005f8f;
+  background-color: #293338;
 }
 
 /* Responsive */
