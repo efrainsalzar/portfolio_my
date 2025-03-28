@@ -7,6 +7,7 @@
   padding: 250px 0px;
   margin: 0 auto; /* Centra la sección */
   gap: 40px; /* Espacio entre texto e imagen */
+  transform: translateX(-50px);
 }
 
 .home-content {
@@ -22,7 +23,7 @@
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 45px;
   color: #bfd5ff;
   margin-bottom: 10px;
 }

@@ -8,11 +8,12 @@
     max-width: 890px; /* Limita el ancho máximo */
     padding: 60px 0px;
     margin: 0 auto; /* Centra la sección */
+    transform: translateX(-50px);
   }
   
   /* Título de la sección */
   .technologies-title {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 40px;
     color: #e2e2e2;
     text-align: left;

@@ -7,6 +7,7 @@
   max-width: 890px; /* Limita el ancho máximo */
   padding: 60px 0px;
   margin: 0 auto; /* Centra la sección */
+  transform: translateX(-50px);
 }
 
 /* Contenedor del contenido */
@@ -22,7 +23,7 @@
 /* Estilos del texto */
 .about-text h2 {
   font-size: 32px;
-  color: #9c9c9c;
+  color: #e4e4e4;
   margin-bottom: 15px;
 }
 
