@@ -39,9 +39,9 @@ const technologies = [
     { src: posrgressIcon, name: "PostgreSQL" },
 ];
 
-function Technologias() {
+function Tecnologias() {
     return (
-        <section className="technologies-section">
+        <section id="tecnologias" className="technologies-section">
             <h2 className="technologies-title">Tecnologías</h2>
             <div className="technologies-content">
                 {technologies.map((icon, index) => (
@@ -55,4 +55,4 @@ function Technologias() {
     );
 }
 
-export default Technologias;
+export default Tecnologias;

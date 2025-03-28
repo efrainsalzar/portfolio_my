@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  max-width: 890px; /* Limita el ancho máximo */
-  padding: 250px 0px;
-  margin: 0 auto; /* Centra la sección */
-  gap: 40px; /* Espacio entre texto e imagen */
+  max-width: 890px;
+  padding: 200px 0px;
+  margin: 0 auto;
+  gap: 40px;
   transform: translateX(-50px);
+  position: relative;
 }
 
 .home-content {
@@ -17,9 +18,10 @@
 
 .profile-pic {
   width: 180px;
-  height: auto;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -45,8 +47,9 @@ p {
 .social-buttons {
   display: flex;
   justify-content: start;
-  gap: 15px; /* Espacio entre enlaces */
+  gap: 15px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 /* Estilos para los enlaces */
@@ -57,20 +60,21 @@ p {
   font-size: 15px;
   color: #fff;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+  background: rgba(255, 255, 255, 0.1);
   padding: 8px 20px;
   border-radius: 20px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* Ajuste del tamaño del icono */
-.social-link i {
+.social-link i,
+.social-link svg {
   font-size: 20px;
 }
 
 /* Efecto hover */
 .social-link:hover {
-  background: rgba(255, 255, 255, 0.4); /* Hace el fondo más visible */
+  background: rgba(255, 255, 255, 0.4);
   transform: scale(1.08);
 }
 
@@ -87,8 +91,6 @@ p {
   color: #ffffff;
 }
 
-
-
 /* Botón "Sobre mí" en la parte inferior */
 .about-button {
   position: absolute;
@@ -98,7 +100,7 @@ p {
   border-radius: 50px;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background:none;
+  background: none;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -107,26 +109,6 @@ p {
 
 .about-button:hover {
   background-color: #064b0f;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .home-section {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 180px;
-  }
-
-  .social-buttons {
-    justify-content: center;
-  }
-
-  .social-button {
-    font-size: 16px;
-  }
 }
 
 /* Estilo para el enlace de deslizar */
@@ -154,4 +136,104 @@ p {
 /* Cambio de color en hover */
 .scroll-down:hover {
   color: #0077b5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .home-section {
+    max-width: 90%;
+    transform: translateX(0);
+    padding: 180px 0;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 150px 20px 100px;
+    gap: 30px;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-section {
+    padding: 130px 15px 80px;
+    transform: translateX(0px);
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-section {
+    padding: 110px 10px 60px;
+    transform: translateX(0px);
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .social-link {
+    width: 100%;
+    padding: 6px 15px;
+    font-size: 14px;
+  }
 }

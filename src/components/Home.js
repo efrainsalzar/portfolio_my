@@ -4,6 +4,7 @@ import './Home.css';
 import profilePic from '../assets/logo512.png';
 
 function Home() {
+
   return (
     <section id="home" className="home-section">
       <div className="home-content">
@@ -29,7 +30,7 @@ function Home() {
       </div>
 
       <img src={profilePic} alt="Foto profesional" className="profile-pic" />
-
+      
     </section>
   );
 }

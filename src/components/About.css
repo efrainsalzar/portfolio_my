@@ -16,15 +16,15 @@
   flex-direction: column;
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
-
 
 /* Estilos del texto */
 .about-text h2 {
   font-size: 32px;
   color: #e4e4e4;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 /* Contenedor de la imagen */
@@ -48,14 +48,15 @@
   color: #e2e2e2;
   line-height: 1.6;
   margin-bottom: 20px;
-  text-align: left; /* Alinea el texto al centro */
 }
-/*contenedor para la imagen*/
+
+/* Contenedor para la imagen */
 .about-image-button {
   display: flex;
   justify-content: center; /* Centra la imagen */
   margin: 20px 0; /* Espaciado arriba y abajo */
 }
+
 /* Contenedor para el botón de descarga */
 .cv-button-container {
   display: flex;
@@ -77,4 +78,86 @@
 
 .cv-button:hover {
   background-color: #005f8f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-section {
+    max-width: 90%;
+    transform: translateX(0);
+    padding: 50px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cv-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 30px 20px;
+    transform: translateX(0px);
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+  }
+
+  .cv-button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 20px 15px;
+    transform: translateX(0px);
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .cv-button {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
 }

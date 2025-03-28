@@ -1,18 +1,22 @@
 header {
-  background: rgba(0, 38, 255, 0.212);
-  padding: 10px 0;
+  padding: 15px 0;
   position: fixed;
-  z-index: 1000;
   width: 100%;
+  z-index: 10;
+  top: 0;
 }
 
 .header-container {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #cccccc62;
+  border-radius: 50px;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 0 20px;
+  transition: all 0.3s ease;
 }
 
 .logo img {
@@ -30,6 +34,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 20px;
+  transition: all 0.3s ease;
 }
 
 .nav-links li {
@@ -39,37 +44,138 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
+  border-radius: 20px;
   font-size: 18px;
   padding: 8px 16px;
   transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #555;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transform: scale(1.05);
 }
 
 .social-links-container {
   display: flex;
-  gap: 50px;  /* Aumentado el espacio entre los iconos */
+  gap: 20px;
 }
 
-.social-logo {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;  /* Tamaño inicial de los iconos */
-  transition: color 0.3s ease, transform 0.3s ease;  /* Transición para el color y el tamaño */
+.social-logo-header {
+  font-size: 30px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-logo:hover {
-  color: #fff;  /* Cambia el color del icono al pasar el ratón */
-  transform: scale(1.2);  /* Aumenta el tamaño del icono un 20% */
+.social-logo-header:hover {
+  color: #008cffbe;
 }
 
-.github {
-  color: #333;
+/* Hamburger menu (initially hidden) */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
 }
 
-.linkedin {
-  color: #0077b5;
+.hamburger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Media query para tabletas */
+@media (max-width: 768px) {
+  .header-container {
+    max-width: 90%;
+    padding: 5px 15px;
+  }
+  
+  .nav-links {
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+  
+  .social-logo-header {
+    font-size: 25px;
+  }
+}
+
+/* Media query para móviles */
+@media (max-width: 576px) {
+  .header-container {
+    max-width: 95%;
+    padding: 5px 10px;
+    position: relative;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    z-index: 20;
+  }
+  
+  nav {
+    position: absolute;
+    top: -1000px; /* Oculto por defecto */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #c5c5c560;
+    border-radius: 15px;
+    padding: 20px 0;
+    transition: top 0.3s ease;
+    z-index: 5;
+  }
+  
+  nav.active {
+    top: 60px; /* Se muestra cuando tiene la clase active */
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .social-links-container {
+    gap: 15px;
+  }
+  
+  .social-logo-header {
+    font-size: 22px;
+  }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 320px) {
+  .header-container {
+    padding: 5px;
+    border-radius: 25px;
+  }
+  
+  .social-links-container {
+    gap: 10px;
+  }
+  
+  .social-logo-header {
+    font-size: 20px;
+  }
 }

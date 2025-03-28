@@ -6,6 +6,8 @@
   max-width: 890px; /* Limita el ancho máximo */
   margin: 0 auto; /* Centra la sección */
   text-align: center; /* Alineación central del texto */
+  padding: 20px 15px; /* Ajustamos padding para pantallas pequeñas */
+  box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
 }
 
 /* Contenedor dentro del footer */
@@ -15,9 +17,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 50px; /* Padding en la parte superior e inferior */
+  box-sizing: border-box; /* Asegura que el contenido no se desborde */
 }
 
-/* Texto de inspiracion */
+/* Texto de inspiración */
 .footer-container p {
   font-size: 14px;
   color: #9c9c9c; /* Color gris claro */
@@ -31,7 +34,6 @@
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration-line: underline;
-
 }
 
 .footer-container p a:hover {
@@ -74,4 +76,45 @@
 /* Asegúrate de que los íconos tengan el tamaño adecuado */
 .social-logo i {
   font-size: 30px;
+}
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Cambia la dirección de la fila a columna en pantallas pequeñas */
+    text-align: center; /* Alineación centrada en pantallas pequeñas */
+    padding: 20px 15px 30px; /* Ajuste en los paddings */
+  }
+
+  .footer-container p {
+    font-size: 12px; /* Ajusta el tamaño del texto */
+    margin-bottom: 15px; /* Añadimos un margen para separar el texto de los íconos */
+  }
+
+  .social-links {
+    gap: 15px; /* Ajustamos el espacio entre los íconos */
+  }
+
+  .social-logo i {
+    font-size: 26px; /* Ajustamos el tamaño de los íconos */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 15px 10px 20px; /* Ajuste de padding más pequeño */
+  }
+
+  .footer-container p {
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    margin-bottom: 10px; /* Menos margen debajo del texto */
+  }
+
+  .social-links {
+    gap: 10px; /* Reducimos el espacio entre los íconos */
+  }
+
+  .social-logo i {
+    font-size: 22px; /* Tamaño más pequeño para los íconos */
+  }
 }

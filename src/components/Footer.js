@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
 
-  const socialLinks = [
+  const socialLink = [
     {
       name: 'GitHub',
       url: 'https://github.com/miusuario',
@@ -33,7 +33,7 @@ function Footer() {
           </a>
         </p>
         <div className="social-links">
-          {socialLinks.map((link, index) => (
+          {socialLink.map((link, index) => (
             <a
               key={index}
               href={link.url}

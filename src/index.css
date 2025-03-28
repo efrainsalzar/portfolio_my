@@ -5,10 +5,12 @@
 
 /* Estilo para el body */
 body {
+  
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background: rgba(35, 52, 143, 0.9);
 }
+
 /* Estilos generales para los enlaces */
 a {
   text-decoration: none;
