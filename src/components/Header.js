@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 
+import profilePic from '../assets/logo192.png';
+
 const Header = () => {
   // Mapeo de colores para las redes sociales (se sigue usando por si se necesita para hover)
   const socialColors = {
@@ -28,7 +30,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <a href="#home">
-            <img src="../assets/logo192.png" alt="Mi Logo" />
+            <img src={profilePic} alt="Mi Logo" />
           </a>
         </div>
         <nav>

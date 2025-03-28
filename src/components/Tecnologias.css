@@ -1,0 +1,66 @@
+/* Sección de Tecnologías */
+.technologies-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 890px; /* Limita el ancho máximo */
+    padding: 60px 0px;
+    margin: 0 auto; /* Centra la sección */
+  }
+  
+  /* Título de la sección */
+  .technologies-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #e2e2e2;
+    text-align: left;
+    width: 100%;
+  }
+  
+  /* Contenedor de tecnologías sin categorías */
+  .technologies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Ajusta automáticamente el número de columnas */
+    gap: 8px; /* Más espacio entre los íconos */
+    width: 100%;
+  }
+  
+  /* Contenedor de cada ícono */
+  .tech-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Íconos */
+  .tech-icon {
+    padding: 8px;
+    width: 55px; /* Aumentamos ligeramente el tamaño de los íconos */
+    height: 55px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde suave */
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px; /* Sombra más sutil */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo más suave */
+  }
+  
+  /* Nombre de la tecnología debajo del ícono */
+  .tech-name {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 14px;
+    color: #e2e2e2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 0; /* Espacio arriba del nombre */
+  }
+  
+  /* Mostrar el nombre al hacer hover sobre el contenedor del ícono */
+  .tech-icon-container:hover .tech-name {
+    visibility: visible;
+    opacity: 1;
+  }
+  

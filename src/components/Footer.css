@@ -1,49 +1,77 @@
+/* Estilos generales para el footer */
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 840px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra la sección */
+  text-align: center; /* Alineación central del texto */
 }
 
+/* Contenedor dentro del footer */
 .footer-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 50px; /* Padding en la parte superior e inferior */
 }
 
-.footer p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+/* Texto de inspiracion */
+.footer-container p {
+  font-size: 14px;
+  color: #9c9c9c; /* Color gris claro */
+  height: 100%;
+  margin: 0;
+  font-style: italic;
 }
 
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links a {
-  color: #fff;
+.footer-container p a {
+  color: #9c9c9c; /* Color gris claro */
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.2rem;
   transition: color 0.3s ease;
+  text-decoration-line: underline;
+
 }
 
-.social-links a:hover {
-  color: #fa6705; /* Naranja cálido */
+.footer-container p a:hover {
+  color: #0084ff; /* Color blanco */
 }
 
-.footer p.copy {
-  font-size: 0.9rem;
-  color: #ddd;
+/* Contenedor de los íconos de las redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espacio entre íconos */
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .footer p {
-    font-size: 0.9rem;
-  }
+/* Botones de las redes sociales */
+.social-logo {
+  font-size: 24px; /* Tamaño del ícono */
+  color: #e2e2e2;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .footer .social-links a {
-    font-size: 1rem;
-  }
+/* Efecto hover */
+.social-logo:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Estilos específicos para cada red social */
+.social-logo.github {
+  color: #b6b6b6; /* Color oscuro para GitHub */
+}
+
+.social-logo.linkedin {
+  color: #a0a0a0; /* Color de LinkedIn */
+}
+
+.social-logo.x {
+  color: #9c9c9c; /* Color para el ícono de Twitter (si es "X") */
+}
+
+/* Asegúrate de que los íconos tengan el tamaño adecuado */
+.social-logo i {
+  font-size: 30px;
 }

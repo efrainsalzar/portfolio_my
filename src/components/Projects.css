@@ -2,15 +2,17 @@
 .projects-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px 20px;
-  background: none;
+  align-items: center;
+  width: 100%;
+  max-width: 890px; /* Limita el ancho máximo */
+  padding: 60px 0px;
+  margin: 0 auto; /* Centra la sección */
 }
 
 /* Contenedor de proyectos con límite de ancho */
 .projects-container {
-  max-width: 900px; /* Mismo ancho máximo que en la sección About */
+  max-width: 840px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columnas responsivas */
   gap: 20px;
@@ -19,7 +21,7 @@
 
 .project-card {
   background-color: #1e1e1e;
-  max-width: 350px;
+  max-width: 320px;
   padding: 10px;
   border-radius: 25px;
   color: #e2e2e2;

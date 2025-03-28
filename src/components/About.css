@@ -1,24 +1,23 @@
 /* Sección sobre mí */
 .about-section {
   display: flex;
-  background: none;
   justify-content: center;
   align-items: center;
-  text-align: left;
-  padding: 50px 20px;
+  width: 100%;
+  max-width: 890px; /* Limita el ancho máximo */
+  padding: 60px 0px;
+  margin: 0 auto; /* Centra la sección */
 }
 
 /* Contenedor del contenido */
 .about-content {
-  max-width: 800px; /* Mismo ancho máximo que en el home */
-  width: 100%;
-  padding: 20px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center;
+  padding: 50px 20px;
 }
+
 
 /* Estilos del texto */
 .about-text h2 {
@@ -48,7 +47,6 @@
   color: #e2e2e2;
   line-height: 1.6;
   margin-bottom: 20px;
-  max-width: 700px;
   text-align: left; /* Alinea el texto al centro */
 }
 /*contenedor para la imagen*/

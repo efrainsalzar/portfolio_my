@@ -1,10 +1,11 @@
 .home-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
-  min-height: 100vh; /* Ocupa toda la pantalla */
-  padding: 50px 20px;
+  max-width: 890px; /* Limita el ancho máximo */
+  padding: 250px 0px;
+  margin: 0 auto; /* Centra la sección */
   gap: 40px; /* Espacio entre texto e imagen */
 }
 

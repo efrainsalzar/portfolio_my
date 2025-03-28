@@ -7,7 +7,7 @@ function Home() {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <h1>¡Hola, soy Efraín Salazar Santos!</h1>
+        <h1>¡Hola, soy TarMi-Moon!</h1>
         <h2>Estudiante de Ingeniería de Sistemas | Desarrollador de Software</h2>
         <p>Apasionado por la tecnología, el desarrollo web y la inteligencia artificial.</p>
 
@@ -30,10 +30,6 @@ function Home() {
 
       <img src={profilePic} alt="Foto profesional" className="profile-pic" />
 
-      {/* Enlace para deslizar hacia abajo */}
-      <a href="#about" className="scroll-down">
-        Hey!!
-      </a>
     </section>
   );
 }
