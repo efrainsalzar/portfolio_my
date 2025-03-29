@@ -15,10 +15,11 @@
 /* Título de la sección */
 .technologies-title {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     color: #e2e2e2;
     text-align: left;
     width: 100%;
+    padding: 10px 0; /* Espacio alrededor del título */
 }
 
 /* Contenedor de tecnologías sin categorías */
@@ -32,6 +33,7 @@
 
 /* Contenedor de cada ícono */
 .tech-icon-container {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +43,7 @@
 
 /* Íconos */
 .tech-icon {
+    background: linear-gradient(to right bottom, #0f3460, #16213e, #17163e, #1a1a2e);
     padding: 8px;
     width: 55px; /* Aumentamos ligeramente el tamaño de los íconos */
     height: 55px;

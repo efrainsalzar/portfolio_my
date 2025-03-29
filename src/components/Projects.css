@@ -9,9 +9,8 @@
 .projects-title {
   font-size: 32px;
   color: #e2e2e2;
-  margin-bottom: 30px;
-  padding: 50px 0;
-
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .projects-container {
@@ -31,13 +30,12 @@
 }
 
 .project-imagen-cuadro {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left, #3e22a5, #17144b);
   width: 300px;
   height: 200px;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   flex-shrink: 0;
 }
 
@@ -45,7 +43,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  left: 10px;
+  left: 15px;
   top: 10px;
   border-radius: 8px;
   object-fit: cover;
@@ -57,7 +55,8 @@
 }
 
 .project-imagen-cuadro:hover .project-image {
-  transform: scale(1.05);
+  transform: scale(0.95);
+ 
 }
 
 .project-info {

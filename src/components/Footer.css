@@ -25,8 +25,10 @@
   font-size: 14px;
   color: #9c9c9c; /* Color gris claro */
   height: 100%;
+  display: flex;
+  align-items: center;
   margin: 0;
-  font-style: italic;
+  
 }
 
 .footer-container p a {
@@ -34,6 +36,7 @@
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration-line: underline;
+  font-style: italic;
 }
 
 .footer-container p a:hover {

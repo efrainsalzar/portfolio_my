@@ -7,8 +7,7 @@ header {
 }
 
 .header-container {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #cccccc62;
+  background: rgba(12, 10, 27, 0.8); /* Fondo oscuro semitransparente */
   border-radius: 50px;
   padding: 5px 20px;
   display: flex;
@@ -19,8 +18,10 @@ header {
   transition: all 0.3s ease;
 }
 
-.logo img {
-  width: 50px;
+/* Clase para hacer el header transparente */
+.header-container.transparent {
+  background: transparent;
+  border: none;
 }
 
 nav {
@@ -42,7 +43,7 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color: #ffffff; /* Blanco para buen contraste */
   text-decoration: none;
   border-radius: 20px;
   font-size: 18px;
@@ -51,7 +52,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(64, 114, 133, 0.507); /* Azul suave para el hover */
   border-radius: 20px;
   transform: scale(1.05);
 }
@@ -62,12 +63,12 @@ nav {
 }
 
 .social-logo-header {
-  font-size: 30px;
+  font-size: 25px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-logo-header:hover {
-  color: #008cffbe;
+  color: #7646cf; /* Dorado para hover */
 }
 
 /* Hamburger menu (initially hidden) */
@@ -127,7 +128,7 @@ nav {
     top: -1000px; /* Oculto por defecto */
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro para el nav */
     border: 1px solid #c5c5c560;
     border-radius: 15px;
     padding: 20px 0;

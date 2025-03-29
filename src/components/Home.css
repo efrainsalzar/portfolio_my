@@ -25,25 +25,16 @@
 }
 
 h1 {
-  font-size: 45px;
-  color: #bfd5ff;
+  color: #bfd5ff; /* Mantengo el color claro para dar contraste con el fondo oscuro */
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 24px;
-  color: #7c7c7c;
+  color: #928e8e; /* Gris claro para un contraste suave */
   margin-bottom: 15px;
 }
 
-p {
-  font-size: 18px;
-  color: #ffffff;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Contenedor de los enlaces de redes */
 .social-buttons {
   display: flex;
   justify-content: start;
@@ -52,7 +43,6 @@ p {
   flex-wrap: wrap;
 }
 
-/* Estilos para los enlaces */
 .social-link {
   display: flex;
   align-items: center;
@@ -60,43 +50,31 @@ p {
   font-size: 15px;
   color: #fff;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente oscuro */
   padding: 8px 20px;
   border-radius: 20px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Ajuste del tamaño del icono */
 .social-link i,
 .social-link svg {
   font-size: 20px;
 }
 
-/* Efecto hover */
 .social-link:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.3); /* Brillo sutil en hover */
+  transform: scale(1.03);
 }
 
-/* Colores específicos de redes */
-.linkedin {
-  color: #ffffff;
+.linkedin, .github, .email {
+  color: #ffffff; /* Mantener iconos blancos */
 }
 
-.github {
-  color: #ffffff;
-}
-
-.email {
-  color: #ffffff;
-}
-
-/* Botón "Sobre mí" en la parte inferior */
 .about-button {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  border: 1px solid black;
+  border: 1px solid #ffffff; /* Borde blanco para visibilidad */
   border-radius: 50px;
   transform: translateX(-50%);
   padding: 10px 20px;
@@ -108,22 +86,31 @@ p {
 }
 
 .about-button:hover {
-  background-color: #064b0f;
+  background-color: #4f6d7a; /* Azul suave para el hover */
 }
 
-/* Estilo para el enlace de deslizar */
-.scroll-down {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgb(150, 154, 167);
-  font-size: 24px;
-  animation: bounce 1.5s infinite ease-in-out;
-  text-decoration: none;
+.scroll-down:hover {
+  color: #4f6d7a; /* Azul suave para el hover */
 }
 
-/* Animación de rebote */
+.saludo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e7e7e7; /* Gris suave para un contraste relajante */
+}
+
+.nombre {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #62a9e4; /* Azul más claro para el nombre */
+}
+
+.presentacion {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #cbd4b0; /* Gris intermedio */
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -133,12 +120,6 @@ p {
   }
 }
 
-/* Cambio de color en hover */
-.scroll-down:hover {
-  color: #0077b5;
-}
-
-/* Responsive */
 @media (max-width: 992px) {
   .home-section {
     max-width: 90%;

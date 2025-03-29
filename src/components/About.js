@@ -13,21 +13,20 @@ function About() {
             <img src={profilePic} alt="Foto profesional" className="profile-pic" />
           </div>
           <p>
-            Soy estudiante de Ingeniería de Sistemas con una gran pasión por el desarrollo de software,
-            la ciberseguridad y el análisis de datos. Me encanta crear soluciones innovadoras utilizando
-            tecnologías modernas y mejorar constantemente mis habilidades.
-          </p>
+            Soy estudiante de <span className="highlight">Ingeniería de Sistemas</span> con experiencia en el <span className="highlight">desarrollo de software</span>
+            , ciberseguridad y análisis de datos
+            . Me especializo en crear soluciones innovadoras utilizando tecnologías modernas
+            , con un enfoque en eficiencia y seguridad
+            . A lo largo de mis proyectos, he aplicado metodologías ágiles para asegurar que el software sea escalable y fácil de mantener.
+            <br/><br/>
 
-          <p>
-            Me esfuerzo en desarrollar software eficiente y seguro mientras sigo aprendiendo nuevas tecnologías.
-            Si deseas conocer más sobre mi trabajo, no dudes en contactarme.
+            En mis proyectos, siempre busco aplicar las mejores prácticas de desarrollo, garantizando un 
+            código limpio y bien estructurado. Me esfuerzo por implementar <span className="highlight">soluciones seguras</span>
+            , adaptadas a las necesidades del cliente y siempre con un enfoque en la <span className="highlight">optimización</span>. 
+            Si deseas conocer más sobre mis proyectos o discutir posibles colaboraciones, no dudes en contactarme.
           </p>
         </div>
-
-        {/* Botón para descargar el currículum */}
-        <div className="about-image-button">
-          <a href="/path-to-your-cv.pdf" download className="cv-button">Descargar CV</a>
-        </div>
+        <hr className="linea-horizontal"></hr>
       </div>
     </section>
   );

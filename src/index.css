@@ -6,12 +6,11 @@
 /* Estilo para el body */
 body {
   
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background: rgba(35, 52, 143, 0.9);
-}
+  background: linear-gradient(to right bottom, #0f3460, #16213e, #17163e, #1a1a2e);
 
-/* Estilos generales para los enlaces */
+}
 a {
   text-decoration: none;
 }

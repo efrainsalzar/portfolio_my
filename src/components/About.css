@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 /* Estilos del texto */
@@ -45,7 +45,8 @@
 /* Párrafos de texto */
 .about-text p {
   font-size: 18px;
-  color: #e2e2e2;
+  color: #cecece;
+  
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -57,29 +58,21 @@
   margin: 20px 0; /* Espaciado arriba y abajo */
 }
 
-/* Contenedor para el botón de descarga */
-.cv-button-container {
-  display: flex;
-  justify-content: center; /* Centra el botón */
-  margin-top: 20px;
+
+.linea-horizontal {
+  height: 3px; /* Grosor de la línea */
+  background-color: rgba(216, 216, 216,0.2); /* Color de la línea */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Sin borde */
+  width: 100%; /* Ancho de la línea */
+  margin: 10px 0; /* Centrar la línea */
 }
 
-/* Botón de descarga de CV */
-.cv-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(33, 95, 228, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 15px;
-  transition: background-color 0.3s ease;
+.highlight {
+  color: #1c96ca;
+  font-weight: bold;
 }
 
-.cv-button:hover {
-  background-color: #293338;
-}
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -102,11 +95,8 @@
     height: 150px;
   }
 
-  .cv-button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
 }
+
 
 @media (max-width: 768px) {
   .about-section {
@@ -128,11 +118,6 @@
     width: 140px;
     height: 140px;
     margin-bottom: 15px;
-  }
-
-  .cv-button {
-    font-size: 14px;
-    padding: 8px 18px;
   }
 }
 
@@ -157,8 +142,4 @@
     margin-bottom: 10px;
   }
 
-  .cv-button {
-    font-size: 12px;
-    padding: 6px 15px;
-  }
 }

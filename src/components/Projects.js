@@ -2,7 +2,8 @@ import React from 'react';
 import './Projects.css';
 
 // Importa las imágenes de tus proyectos
-import imagenesP from '../assets/images/Devs.jpg';
+import Temp_chess from '../assets/images/Kotlin_app_temp.png';
+import SDL_games from '../assets/images/View_SDL_games.png';
 
 function Projects() {
   const allProjects = [
@@ -12,14 +13,14 @@ function Projects() {
       repo: "https://github.com/efrainsalzar?tab=repositories",
       /*preview: "#", // Agrega el link a la demo si tienes*/
       tech: ["C++", "SDL", "Physics", "Game Development"],
-      image: imagenesP
+      image: SDL_games
     },
     {
       title: "Mobile App Development with Kotlin",
       description: "Desarrollé una aplicación móvil para Android utilizando Kotlin, con un enfoque en la interfaz de usuario y la interacción con servicios web. Conectada a base de datos Fire Base.",
-      repo: "https://github.com/tuusuario/kotlin-mobile-app",
+      repo: "https://github.com/efrainsalzar/TemporizadorChess",
       tech: ["Kotlin", "Android", "Firebase", "Mobile Development"],
-      image: imagenesP // Reemplaza con la ruta de la imagen
+      image: Temp_chess // Reemplaza con la ruta de la imagen
     }
   ];
 
