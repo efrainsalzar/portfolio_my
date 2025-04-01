@@ -31,11 +31,12 @@
 
 .project-imagen-cuadro {
   background: linear-gradient(to left, #3e22a5, #17144b);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   width: 300px;
   height: 200px;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
   flex-shrink: 0;
 }
 
@@ -47,10 +48,11 @@
   top: 10px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .project-imagen-cuadro:hover {
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transform: scale(1.01);
 }
 
