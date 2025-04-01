@@ -31,7 +31,7 @@
 
 .project-imagen-cuadro {
   background: linear-gradient(to left, #3e22a5, #17144b);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0);
   width: 300px;
   height: 200px;
   overflow: hidden;
@@ -52,7 +52,7 @@
 }
 
 .project-imagen-cuadro:hover {
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transform: scale(1.01);
 }
 

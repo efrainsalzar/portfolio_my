@@ -13,7 +13,7 @@ function Home() {
           <span className="nombre">&nbsp;&nbsp;TharMi-Moon</span><br/>
           <span className="presentacion">A tu servicio.</span>
         </h1>
-        <h2>Estudiante de Ingeniería de Sistemas | Desarrollador de Software</h2>
+        <h2>Est. de Ingeniería de Sistemas | Desarrollador de Software</h2>
 
         {/* Enlaces a redes sociales */}
         <div className="social-buttons">

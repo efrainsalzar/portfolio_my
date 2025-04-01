@@ -68,7 +68,7 @@ nav {
 }
 
 .social-logo-header:hover {
-  color: #7646cf; /* Dorado para hover */
+  color: rgba(0, 255, 255, 0.9);
 }
 
 /* Hamburger menu (initially hidden) */
