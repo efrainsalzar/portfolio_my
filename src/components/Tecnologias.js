@@ -9,14 +9,14 @@ import pythonIcon from "../assets/icons/python-svgrepo-com.svg";
 import cplusplus from "../assets/icons/c-plus-plus-svgrepo-com.svg";
 import javaIcon from "../assets/icons/java-svgrepo-com.svg";
 import gitIcon from "../assets/icons/git-svgrepo-com.svg";
-import dockerIcon from "../assets/icons/docker-svgrepo-com.svg";
+//import dockerIcon from "../assets/icons/docker-svgrepo-com.svg";
 import nodejsIcon from "../assets/icons/nodejs-svgrepo-com.svg";
 import posrgressIcon from "../assets/icons/postgresql-svgrepo-com.svg";
 import kotlinIcon from "../assets/icons/kotlin-svgrepo-com.svg";
 import mysqlIcon from "../assets/icons/mysql-svgrepo-com.svg";
 import mongodbIcon from "../assets/icons/mongodb-svgrepo-com.svg";
-import gitgubIcon from "../assets/icons/github-svgrepo-com.svg";
-import tensoflowIcon from "../assets/icons/tensorflow-svgrepo-com.svg";
+//import gitgubIcon from "../assets/icons/github-svgrepo-com.svg";
+//import tensoflowIcon from "../assets/icons/tensorflow-svgrepo-com.svg";
 import vscodeIcon from "../assets/icons/vscode-svgrepo-com.svg";
 
 const technologies = [
@@ -26,13 +26,13 @@ const technologies = [
     { src: reactIcon, name: "React" },
     { src: cplusplus, name: "C++" },
     { src: gitIcon, name: "Git" },
-    { src: dockerIcon, name: "Docker" },
+    //{ src: dockerIcon, name: "Docker" },
     { src: nodejsIcon, name: "Node.js" },
     { src: pythonIcon, name: "Python" },
     { src: mysqlIcon, name: "MySQL" },
     { src: mongodbIcon, name: "MongoDB" },
-    { src: gitgubIcon, name: "GitHub" },
-    { src: tensoflowIcon, name: "TensorFlow" },
+    //{ src: gitgubIcon, name: "GitHub" },
+    //{ src: tensoflowIcon, name: "TensorFlow" },
     { src: kotlinIcon, name: "Kotlin" },
     { src: vscodeIcon, name: "VS Code" },
     { src: javaIcon, name: "Java" },

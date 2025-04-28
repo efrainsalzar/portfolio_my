@@ -25,6 +25,8 @@
 /* Contenedor de tecnologías sin categorías */
 .technologies-content {
     display: grid;
+    padding-left: 50px; /* Espacio a la izquierda */
+    padding-right: 50px; /* Espacio a la derecha */
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Ajusta automáticamente el número de columnas */
     gap: 8px; /* Más espacio entre los íconos */
     width: 100%;
