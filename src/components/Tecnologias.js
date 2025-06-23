@@ -42,7 +42,7 @@ const technologies = [
 function Tecnologias() {
     return (
         <section id="tecnologias" className="technologies-section">
-            <h2 className="technologies-title">Tecnologías</h2>
+            <h2 className="technologies-title">Stack Tecnológco</h2>
             <div className="technologies-content">
                 {technologies.map((icon, index) => (
                     <div key={index} className="tech-icon-container">

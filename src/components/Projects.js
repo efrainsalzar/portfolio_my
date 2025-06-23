@@ -4,23 +4,31 @@ import './Projects.css';
 // Importa las imágenes de tus proyectos
 import Temp_chess from '../assets/images/Kotlin_app_temp.png';
 import SDL_games from '../assets/images/View_SDL_games.png';
+import Temp_hospital from '../assets/images/hospital.png';
 
 function Projects() {
   const allProjects = [
     {
+      title: "Sistema Web para Hospital",
+      description: "Diseñé y desarrollé una página web informativa para un hospital proptotipo, integrando un backend en Node.js y un frontend en Vue.js. La plataforma permite mostrar servicios médicos, departamentos y horarios de atención.",
+      repo: "https://github.com/efrainsalzar/hospital-web",
+      tech: ["Node.js", "Express", "MySQL", "Vue 3", "Vuetify", "Axios", "Vite"],
+
+      image: Temp_hospital 
+    },
+    {
       title: "Games Development in SDL with C++",
       description: "Desarrollé un videojuego interactivo utilizando la biblioteca SDL en C++, centrándome en la física del juego y la lógica de eventos en tiempo real.",
       repo: "https://github.com/efrainsalzar?tab=repositories",
-      /*preview: "#", // Agrega el link a la demo si tienes*/
-      tech: ["C++", "SDL", "Physics", "Game Development"],
+      tech: ["C++", "SDL", "Game Loop", "Physics", "2D Rendering"],
       image: SDL_games
     },
     {
       title: "Mobile App Development with Kotlin",
       description: "Desarrollé una aplicación móvil para Android utilizando Kotlin, con un enfoque en la interfaz de usuario y la interacción con servicios web. Conectada a base de datos Fire Base.",
       repo: "https://github.com/efrainsalzar/TemporizadorChess",
-      tech: ["Kotlin", "Android", "Firebase", "Mobile Development"],
-      image: Temp_chess // Reemplaza con la ruta de la imagen
+      tech: ["Kotlin", "Android", "Firebase", "UI/UX", "Mobile Development"],
+      image: Temp_chess 
     }
   ];
 
@@ -48,6 +56,9 @@ function Projects() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="coming-soon">
+        <p>Más proyectos en desarrollo.</p>
       </div>
     </section>
   );
