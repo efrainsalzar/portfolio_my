@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+// import React from 'react';
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
 import './Home.css';
 import profilePic from '../assets/logo512.png';
 
@@ -10,10 +10,10 @@ function Home() {
       <div className="home-content">
         <h1>
           <span className="saludo">¡Hola!</span>
-          <span className="nombre">&nbsp;&nbsp;TharMi-Moon</span><br/>
+          <span className="nombre">&nbsp;&nbsp;TharMi-Moon</span><br />
           <span className="presentacion">A tu servicio.</span>
         </h1>
-        <h2>Est. de Ingeniería de Sistemas | Desarrollador de Software</h2>
+        <h2>| Desarrollador de Software</h2>
 
         {/* Enlaces a redes sociales */}
         <div className="social-buttons">
@@ -28,6 +28,11 @@ function Home() {
           <a href="mailto:efrainsalzarsantos@gmail.com"
             className="social-link email">
             <FaEnvelope /> Email
+          </a>
+          <a href="/C_V_efrain.pdf"
+            download="TharMi-Moon_CV.pdf"
+            className="social-link download">
+            <FaDownload /> Descargar CV
           </a>
         </div>
       </div>

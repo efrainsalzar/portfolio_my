@@ -1,4 +1,5 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 import "./About.css";
 import profilePic from "../assets/logo512.png";
 
@@ -36,6 +37,9 @@ function About() {
             mantener una comunicación clara y aprender de cada experiencia para
             seguir creciendo como profesional.
           </p>
+          <a href="/cv.pdf" download="TharMi-Moon_CV.pdf" className="download-button">
+            <FaDownload /> Descargar CV
+          </a>
         </div>
         <hr className="linea-horizontal"></hr>
       </div>

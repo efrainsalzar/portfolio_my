@@ -73,6 +73,33 @@
   font-weight: bold;
 }
 
+/* Botón de descarga del CV */
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(28, 150, 202, 0.2);
+  border: 2px solid #1c96ca;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  /* margin-top: 5px; */
+  font-weight: 500;
+}
+
+.download-button:hover {
+  background: rgba(28, 150, 202, 0.4);
+  /* transform: scale(1.05); */
+  /* box-shadow: 0 4px 12px rgba(28, 150, 202, 0.3); */
+}
+
+.download-button svg {
+  font-size: 18px;
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
